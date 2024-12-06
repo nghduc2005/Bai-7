@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+ /* setup variable */
+ :root {
+    /* set font */
+    --vnpro: "Be Vietnam Pro", sans-serif;
+    --lora: "Lora", serif;
+
+    /* set color */
+    --text-color: #333333;
+    --background-white: #fff;
+    --background-gray: #F1F1F1;
+    --background-box: #E2E2E2;
+ }
+ /* end setup */
+
+ /* presetting */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+/* end presetting */
+
+/* container */
+    .container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 1230px) {
+        .container {
+            width: 720px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .container {
+            width: 100%;
+            padding: 0 15px;
+        }
+    }
+/* end container */
+
+/* box  */
+    .box {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: var(--vnpro);
+        background-color: var(--background-box);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* end box  */
+
+/* header */
+    .header {
+        padding: 20px 0;
+    }
+
+    .header .inner-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:30px
+    }
+
+    .header .inner-logo {
+        width: 200px;
+        height: 60px;
+    }
+
+    .header .inner-menu {
+        height: 34px;
+        flex: 1;
+    }
+
+    .header .inner-button {
+        width: 120px;
+        height: 42px;
+    }
+
+    @media (max-width: 1230px) {
+        .header {
+            padding: 15px 0;
+        }
+
+        .header .inner-logo {
+            width: 140px;
+            height: 42px;
+        }
+    
+        .header .inner-menu {
+            height: 30px;
+        }
+    
+        .header .inner-button {
+            width: 102px;
+            height: 36px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .header {
+            padding: 15px 0;
+        }
+    
+        .header .inner-wrap {
+            gap:125px;
+        }
+    
+        .header .inner-logo {
+            width: 140px;
+            height: 42px;
+            order: 1;
+        }
+    
+        .header .inner-menu {
+            height: 36px;
+            width: 66px;
+            flex: none;
+            font-size: 16px;
+        }
+    
+        .header .inner-button {
+            width: 78px;
+            height: 36px;
+            font-size: 16px;
+            order: 1;
+        }
+    }
+/* end header */
+
+/* section1 */
+.section-1 {
+    padding: 80px 0;
+    background-color: var(--background-gray);
+}
+
+.section-1 .inner-wrap {
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+.section-1 .inner-content {
+    width: calc((100% - 30px)/2);
+    height: 267px;
+}
+
+.section-1 .inner-image {
+    width: calc((100% - 30px)/2);
+    height: 520px;
+}
+
+@media (max-width: 1230px) {
+    .section-1 {
+        padding: 60px 0;
+    }
+    
+    .section-1 .inner-content {
+        height: 267px;
+    }
+    
+    .section-1 .inner-image {
+        height: 310px;
+    }
+}
+
+@media (max-width: 750px) {
+    .section-1 {
+        padding: 45px 0;
+    }
+    
+    .section-1 .inner-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .section-1 .inner-content {
+        width: 100%;
+        order: 1;
+    }
+    
+    .section-1 .inner-image {
+        width: 100%;
+        height: 491px;
+    }
+}
+/* end section1 */
+
+/* box title */
+.box-title {
+    font-family: var(--lora);
+    height: 80px;
+    width: 50%;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1230px) {
+    .box-title {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .box-title {
+        height: 60px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+/* end box title */
+
+/* section2 */
+.section-2 {
+    padding: 80px 0;
+}
+
+.section-2 .inner-wrap {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.section-2 .inner-item {
+    height: 420px;
+    background-color: var(--background-box);
+}
+
+@media (max-width: 1230px) {
+    .section-2 {
+        padding: 60px 0;
+    }
+    
+    .section-2 .inner-wrap {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .section-2 {
+        padding: 45px 0;
+    }
+
+    .section-2 .inner-wrap {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* end section2 */
+
+/* section3 */
+.section-3 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--background-gray);
+}
+
+.section-3 .inner-wrap {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+}
+
+.section-3 .inner-item {
+    height: 300px;
+}
+
+@media (max-width: 1230px) {
+    .section-3 {
+        padding: 60px 0;
+    }
+    
+    .section-3 .inner-wrap {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .section-3 {
+        padding: 45px 0;
+    }
+    
+    .section-3 .inner-wrap {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* end section3 */
+
+/* section4*/
+.section-4 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-4 .inner-wrap {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.section-4 .inner-item {
+    height: 300px;
+}
+
+@media (max-width: 1230px) {
+    .section-4 {
+        padding: 60px 0;
+    }
+    
+    .section-4 .inner-wrap {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .section-4 {
+        padding: 45px 0;
+    }
+}
+/* end section3 */
+
+/* footer  */
+.footer {
+    background-color: #d9d9d9;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--vnpro);
+    padding: 24px 0px;
+    text-align: center;
+}
+/* end footer  */
